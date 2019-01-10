@@ -1,5 +1,5 @@
 ---
-- hosts: CMPTEST001.PON.LOCAL
+- hosts: windows
   tasks:
 #  - name: ansible create directory example
 #   file:
