@@ -1,5 +1,5 @@
 ---
-- hosts: windows
+- hosts: all
   tasks:
    - name: Install Notepad
      win_package:
