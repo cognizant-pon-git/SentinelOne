@@ -1,0 +1,11 @@
+---
+- hosts: windows
+  tasks:
+   - name: Create a directory
+   win_file:
+      path: C:\Oper
+      state: directory
+  - name: Touch a file
+   win_file:
+      path: C:\Oper\Sample.txt
+      state: touch
