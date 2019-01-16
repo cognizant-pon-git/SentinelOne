@@ -1,6 +1,6 @@
 ---
 - name: Playbook
-- hosts: windows
+- hosts: all
   tasks:
 #  - name: ansible create directory example
 #   file:
