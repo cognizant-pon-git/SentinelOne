@@ -1,20 +1,7 @@
 ---
-- name: Playbook
-- hosts: all
+- hosts: windows
   tasks:
-#  - name: ansible create directory example
-#   file:
-#      path: C:/Sample
-#      state: directory
-   - name: Create a directory
+   - name: Create installation directory
      win_file:
-        path: C:\Oper
+        path: C:\SentinelOne1
         state: directory
-   - name: Touch a file
-     win_file:
-        path: C:\Oper\Sample.txt
-        state: touch
-   - name: Copy a file to remote windows
-     win_copy:
-        src: /root/tushar/SentinelAgent-2-6-2-1465-Linux_linux_v2_6_2_1465.bsx
-        dest: C:\Oper\SentinelAgent.bsx 
